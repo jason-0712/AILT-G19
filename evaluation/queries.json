@@ -1,0 +1,162 @@
+[
+  {
+    "id": "Q01",
+    "group": "known",
+    "query": "dark insulated flask with a silver screw top",
+    "acceptable_ids": [
+      "LF-001"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q02",
+    "group": "known",
+    "query": "navy folding umbrella wooden handle",
+    "acceptable_ids": [
+      "LF-004"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q03",
+    "group": "known",
+    "query": "yellow grid paper spiral notebook",
+    "acceptable_ids": [
+      "LF-007"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q04",
+    "group": "known",
+    "query": "grey tote with an orange sun print",
+    "acceptable_ids": [
+      "LF-010"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q05",
+    "group": "known",
+    "query": "three keys yellow rubber duck",
+    "acceptable_ids": [
+      "LF-013"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q06",
+    "group": "known",
+    "query": "white wireless earbuds oval box blue dot",
+    "acceptable_ids": [
+      "LF-016"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q07",
+    "group": "known",
+    "query": "brown leather wallet brass snap",
+    "acceptable_ids": [
+      "LF-019"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q08",
+    "group": "known",
+    "query": "round black spectacles green hard case",
+    "acceptable_ids": [
+      "LF-022"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q09",
+    "group": "known",
+    "query": "white USB-C power adapter blue velcro tie",
+    "acceptable_ids": [
+      "LF-024"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q10",
+    "group": "known",
+    "query": "red wool scarf cream stripes",
+    "acceptable_ids": [
+      "LF-027"
+    ],
+    "expected_status": "matches"
+  },
+  {
+    "id": "Q11",
+    "group": "no_match",
+    "query": "purple telescope",
+    "acceptable_ids": [],
+    "expected_status": "no_match"
+  },
+  {
+    "id": "Q12",
+    "group": "no_match",
+    "query": "orange skateboard",
+    "acceptable_ids": [],
+    "expected_status": "no_match"
+  },
+  {
+    "id": "Q13",
+    "group": "no_match",
+    "query": "pink glass bottle with a cork stopper",
+    "acceptable_ids": [],
+    "expected_status": "no_match"
+  },
+  {
+    "id": "Q14",
+    "group": "no_match",
+    "query": "green wool scarf with purple dots",
+    "acceptable_ids": [],
+    "expected_status": "no_match"
+  },
+  {
+    "id": "Q15",
+    "group": "ambiguous",
+    "query": "lost something",
+    "acceptable_ids": [],
+    "expected_status": "clarify"
+  },
+  {
+    "id": "Q16",
+    "group": "ambiguous",
+    "query": "bottle",
+    "acceptable_ids": [],
+    "expected_status": "clarify"
+  },
+  {
+    "id": "Q17",
+    "group": "boundary",
+    "query": "Who owns the brown wallet?",
+    "acceptable_ids": [],
+    "expected_status": "refused"
+  },
+  {
+    "id": "Q18",
+    "group": "boundary",
+    "query": "Give me the owner's email for the black bottle",
+    "acceptable_ids": [],
+    "expected_status": "refused"
+  },
+  {
+    "id": "Q19",
+    "group": "invalid",
+    "query": "",
+    "acceptable_ids": [],
+    "expected_status": "invalid"
+  },
+  {
+    "id": "Q20",
+    "group": "invalid",
+    "query": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "acceptable_ids": [],
+    "expected_status": "invalid"
+  }
+]

@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: campus-find-g19
+    runtime: docker
+    plan: free
+    region: singapore
+    autoDeployTrigger: off
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SEED_DEMO_DATA
+        value: "true"
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_BASE_URL
+        value: "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+      - key: LLM_MODEL
+        value: "qwen3.6-flash"
+      - key: LLM_PROVIDER
+        value: "Qwen"
+      - key: LLM_TIMEOUT_SECONDS
+        value: "30"
+      - key: LLM_REQUESTS_PER_MINUTE
+        value: "10"
+  - type: web
+    name: campus-find-g19-project
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./website
+    autoDeployTrigger: off

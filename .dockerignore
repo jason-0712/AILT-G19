@@ -1,0 +1,13 @@
+.git
+.venv
+.env
+.streamlit/secrets.toml
+storage
+__pycache__
+.pytest_cache
+*.log
+evaluation/results
+
+# Local recordings, submission documents, and build scratch files.
+output/
+tmp/

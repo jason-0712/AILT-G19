@@ -1,0 +1,302 @@
+[
+  {
+    "id": "LF-001",
+    "type": "Bottle",
+    "colour": "black",
+    "features": [
+      "insulated metal",
+      "silver screw lid"
+    ],
+    "description": "Black insulated metal water bottle with a silver screw lid and a small crescent sticker."
+  },
+  {
+    "id": "LF-002",
+    "type": "Bottle",
+    "colour": "blue",
+    "features": [
+      "plastic",
+      "flip-top lid"
+    ],
+    "description": "Blue plastic water bottle with a flip-top lid and a white measuring scale."
+  },
+  {
+    "id": "LF-003",
+    "type": "Bottle",
+    "colour": "green",
+    "features": [
+      "metal",
+      "bamboo lid"
+    ],
+    "description": "Green metal bottle with a bamboo lid and a leaf-shaped sticker."
+  },
+  {
+    "id": "LF-004",
+    "type": "Umbrella",
+    "colour": "navy",
+    "features": [
+      "folding",
+      "wooden handle"
+    ],
+    "description": "Navy folding umbrella with a wooden handle and a yellow wrist strap."
+  },
+  {
+    "id": "LF-005",
+    "type": "Umbrella",
+    "colour": "red",
+    "features": [
+      "white dots",
+      "curved handle"
+    ],
+    "description": "Red umbrella with white dots and a curved plastic handle."
+  },
+  {
+    "id": "LF-006",
+    "type": "Umbrella",
+    "colour": "black",
+    "features": [
+      "long",
+      "silver tip"
+    ],
+    "description": "Long black umbrella with a straight foam handle and a silver tip."
+  },
+  {
+    "id": "LF-007",
+    "type": "Notebook",
+    "colour": "yellow",
+    "features": [
+      "spiral binding",
+      "grid paper"
+    ],
+    "description": "Yellow spiral notebook with grid paper and a blue triangle on the cover."
+  },
+  {
+    "id": "LF-008",
+    "type": "Notebook",
+    "colour": "brown",
+    "features": [
+      "hard cover",
+      "elastic band"
+    ],
+    "description": "Brown hard-cover notebook with a black elastic band and plain pages."
+  },
+  {
+    "id": "LF-009",
+    "type": "Notebook",
+    "colour": "purple",
+    "features": [
+      "soft cover",
+      "moon illustration"
+    ],
+    "description": "Purple soft-cover notebook with a moon illustration and lined pages."
+  },
+  {
+    "id": "LF-010",
+    "type": "Bag",
+    "colour": "grey",
+    "features": [
+      "canvas tote",
+      "orange sun"
+    ],
+    "description": "Grey canvas tote bag with an orange sun print and two short handles."
+  },
+  {
+    "id": "LF-011",
+    "type": "Bag",
+    "colour": "black",
+    "features": [
+      "backpack",
+      "red zipper"
+    ],
+    "description": "Black backpack with a red zipper and a small mesh side pocket."
+  },
+  {
+    "id": "LF-012",
+    "type": "Bag",
+    "colour": "blue",
+    "features": [
+      "drawstring",
+      "white stripe"
+    ],
+    "description": "Blue drawstring bag with a white stripe and black cords."
+  },
+  {
+    "id": "LF-013",
+    "type": "Keys",
+    "colour": "silver",
+    "features": [
+      "three keys",
+      "rubber duck"
+    ],
+    "description": "Three silver keys on a round ring with a yellow rubber duck charm."
+  },
+  {
+    "id": "LF-014",
+    "type": "Keys",
+    "colour": "brass",
+    "features": [
+      "two keys",
+      "green loop"
+    ],
+    "description": "Two brass keys attached to a green fabric loop."
+  },
+  {
+    "id": "LF-015",
+    "type": "Keys",
+    "colour": "silver",
+    "features": [
+      "single key",
+      "star charm"
+    ],
+    "description": "One silver key with a purple star charm and a square key ring."
+  },
+  {
+    "id": "LF-016",
+    "type": "Earphones",
+    "colour": "white",
+    "features": [
+      "oval case",
+      "blue dot sticker"
+    ],
+    "description": "White wireless earphones in an oval charging case with a blue dot sticker."
+  },
+  {
+    "id": "LF-017",
+    "type": "Earphones",
+    "colour": "black",
+    "features": [
+      "wired",
+      "red ear tips"
+    ],
+    "description": "Black wired earphones with red silicone ear tips and a fabric cable."
+  },
+  {
+    "id": "LF-018",
+    "type": "Earphones",
+    "colour": "pink",
+    "features": [
+      "square case",
+      "clear cover"
+    ],
+    "description": "Pink wireless earphones in a square charging case with a clear protective cover."
+  },
+  {
+    "id": "LF-019",
+    "type": "Wallet",
+    "colour": "brown",
+    "features": [
+      "folded leather",
+      "brass snap"
+    ],
+    "description": "Brown folded leather wallet with a brass snap and a stitched zigzag pattern."
+  },
+  {
+    "id": "LF-020",
+    "type": "Wallet",
+    "colour": "green",
+    "features": [
+      "fabric",
+      "zip closure"
+    ],
+    "description": "Green fabric wallet with a zip closure and a small white flower print."
+  },
+  {
+    "id": "LF-021",
+    "type": "Card holder",
+    "colour": "blue",
+    "features": [
+      "transparent window",
+      "striped strap"
+    ],
+    "description": "Blue empty card holder with a transparent window and a striped fabric strap."
+  },
+  {
+    "id": "LF-022",
+    "type": "Glasses",
+    "colour": "black",
+    "features": [
+      "round frames",
+      "green case"
+    ],
+    "description": "Round black glasses in a green hard case with a gold clasp."
+  },
+  {
+    "id": "LF-023",
+    "type": "Glasses",
+    "colour": "brown",
+    "features": [
+      "rectangular frames",
+      "soft pouch"
+    ],
+    "description": "Rectangular brown glasses in a beige soft pouch with a drawstring."
+  },
+  {
+    "id": "LF-024",
+    "type": "Charger",
+    "colour": "white",
+    "features": [
+      "USB-C cable",
+      "velcro tie"
+    ],
+    "description": "White USB-C charger with a short cable and a blue velcro tie."
+  },
+  {
+    "id": "LF-025",
+    "type": "Charger",
+    "colour": "black",
+    "features": [
+      "two USB ports",
+      "grey cable"
+    ],
+    "description": "Black charger with two USB ports and a long grey cable."
+  },
+  {
+    "id": "LF-026",
+    "type": "Pencil case",
+    "colour": "orange",
+    "features": [
+      "mesh pocket",
+      "zip closure"
+    ],
+    "description": "Orange pencil case with a mesh pocket and a black zip closure."
+  },
+  {
+    "id": "LF-027",
+    "type": "Scarf",
+    "colour": "red",
+    "features": [
+      "wool",
+      "cream stripes"
+    ],
+    "description": "Red wool scarf with cream stripes and short fringes."
+  },
+  {
+    "id": "LF-028",
+    "type": "Hat",
+    "colour": "beige",
+    "features": [
+      "bucket shape",
+      "green patch"
+    ],
+    "description": "Beige bucket hat with a green square patch and a stitched brim."
+  },
+  {
+    "id": "LF-029",
+    "type": "Watch",
+    "colour": "silver",
+    "features": [
+      "blue face",
+      "metal strap"
+    ],
+    "description": "Silver watch with a blue face and a metal strap; no markings or serial numbers recorded."
+  },
+  {
+    "id": "LF-030",
+    "type": "Phone case",
+    "colour": "clear",
+    "features": [
+      "daisy pattern",
+      "yellow edges"
+    ],
+    "description": "Clear empty phone case with a white daisy pattern and yellow edges."
+  }
+]
