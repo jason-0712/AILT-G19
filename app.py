@@ -18,6 +18,13 @@ def get_database(url):
     return engine
 
 def item_card(item, rank=None, evidence=None):
+    title = f"{item.colour.title()} {item.type.lower()} · {item.id}"
+    if rank:
+        title = f"Match {rank} · {title}"
+    with st.expander(title):
+        item_details(item, rank, evidence)
+
+def item_details(item, rank, evidence):
     label = f"Possible match {rank}" if rank else item.type
     quotes = ""
     if evidence:
@@ -29,7 +36,7 @@ def item_card(item, rank=None, evidence=None):
         f'<h3>{escape(item.colour.title() + " " + item.type.lower())}</h3>'
         f'<p>{escape(item.description)}</p><p><small>Found at: '
         f'<abbr title="{escape(PLACES.get(item.place, item.place), quote=True)}">{escape(item.place)}</abbr>'
-        f'</small></p>{quotes}</article>')
+        f'</small></p><p>Identifying features: {escape(", ".join(item.features))}</p>{quotes}</article>')
     photo = get_photo(engine, item.id)
     if photo:
         st.image(photo, caption="Item photo · " + item.id, width=320)
