@@ -1,6 +1,6 @@
 # Running Campus Find
 
-[Application](https://campus-find-g19.onrender.com) 路
+[Application](https://campus-find-g19.onrender.com) 
 [Project page](https://campus-find-g19-project.onrender.com)
 
 An AILT9019 Group 19 lost-and-found project. Students search; authorised centre
