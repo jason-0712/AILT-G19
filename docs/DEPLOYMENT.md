@@ -50,12 +50,11 @@ this course project as an operational service.
 7. Confirm the item and photo no longer appear and do not return after startup.
 
 The static site serves website/index.html. All CSS and the running screenshot
-are embedded; the file also works offline. The repository-link placeholder must
-be replaced before assessment.
+are embedded. The file opens offline and includes a link to the team repository.
 
 ## Staff and optional AI/SSO
 
-See STAFF_AND_SIGNIN.md for provisioning and the pending Microsoft registration.
+See STAFF_AND_SIGNIN.md for staff provisioning and optional Microsoft tenant configuration.
 There are no default committed passwords. Local generated staff credentials are
 stored in ignored storage/staff-access.txt for the owner.
 

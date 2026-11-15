@@ -32,10 +32,9 @@ Parameterized SQL is used throughout. Item text is escaped before HTML display.
 Student users cannot upload files or supply SQL/roles. No passwords or photos
 are sent to the LLM.
 
-Limitations: Streamlit browser sessions are not a full enterprise access
-management system; OIDC needs HKU approval and live validation. The dataset and
-retrieval evaluation are small, and human collection verification stays outside
-the app. Free service quotas and backup retention must be monitored.
+Staff use application accounts. Microsoft sign-in requires a registered application
+in the HKU tenant. Evaluation covers a small fictional catalogue. Staff check
+ownership in person. Hosting quotas and backup retention follow the service plan.
 
 ## Qwen matching
 

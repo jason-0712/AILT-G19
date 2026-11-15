@@ -38,9 +38,9 @@ def main():
         "provider":settings.provider if args.mode == "ai" else None,
         "model":settings.model if args.mode == "ai" else None,
         "prompt_version":PROMPT_VERSION, "prompt_sha256":hashlib.sha256(SYSTEM_PROMPT.encode()).hexdigest(),
-        "dataset_sha256":dataset_hash(records), "answer_key_review":"pending second team member",
+        "dataset_sha256":dataset_hash(records), "answer_key_review":"development labels; no independent review recorded",
         "groups":groups, "cases":results,
-        "note":"Synthetic fixture results only. Keyword overlap is not semantic matching. AI evidence accuracy still requires manual review."}
+        "note":"Scores use the labelled synthetic queries. A passing retrieval case means an acceptable item appeared in the top three. Source checks confirm that the quoted words occur in the record."}
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report,indent=2),encoding="utf-8")
