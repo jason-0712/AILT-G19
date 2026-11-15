@@ -4,7 +4,7 @@ import streamlit as st
 from sqlalchemy.exc import SQLAlchemyError
 from lostfound.config import ROOT, load_settings
 from lostfound.database import connect_database, initialize, list_items, get_photo
-from lostfound.matching import search
+from lostfound.matching import keyword_matches, search
 from lostfound.locations import PLACE_OPTIONS, PLACES, UNSPECIFIED
 from lostfound.staff_ui import render_staff
 
@@ -83,6 +83,11 @@ with search_tab:
         st.session_state["result"] = result
         st.session_state["result_mode"] = mode
         st.session_state["result_query"] = query
+        # Use the exact query and inventory snapshot supplied to the AI.
+        st.session_state["keyword_comparison"] = (
+            [match.id for match in keyword_matches(query, selected)]
+            if mode == "ai" and result.status in {"matches", "no_match"} else None
+        )
     result = st.session_state.get("result")
     if result and st.session_state.get("result_mode") == mode:
         st.divider()
@@ -103,6 +108,17 @@ with search_tab:
             st.warning(result.message)
         else:
             st.info(result.message)
+        comparison = st.session_state.get("keyword_comparison")
+        if mode == "ai" and comparison is not None:
+            st.subheader("Keyword comparison")
+            st.caption(f'Shared words for “{st.session_state["result_query"]}”. An item can share a colour and still be the wrong object.')
+            current = {item.id: item for item in list_items(engine)}
+            available = [current[item_id] for item_id in comparison if item_id in current]
+            if available:
+                for item in available:
+                    item_card(item)
+            else:
+                st.write("No available record shares a keyword with this description.")
 
 with browse_tab:
     st.subheader("Available items")

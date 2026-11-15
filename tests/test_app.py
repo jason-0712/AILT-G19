@@ -34,6 +34,31 @@ def test_category_filter(monkeypatch, tmp_path):
     assert all(m.id in {"LF-004","LF-005","LF-006"} for m in at.session_state["result"].matches)
     assert not at.exception
 
+def test_ai_rejection_compares_same_filtered_query(monkeypatch, tmp_path):
+    from lostfound import matching
+    from lostfound.models import ModelResult
+    at = app(monkeypatch, tmp_path)
+    monkeypatch.setenv("LLM_API_KEY", "test-only")
+    monkeypatch.setenv("LLM_BASE_URL", "https://example.test/v1")
+    monkeypatch.setenv("LLM_PROVIDER", "test")
+    monkeypatch.setenv("LLM_MODEL", "test")
+    monkeypatch.setattr(matching, "request_model",
+                        lambda *args: ModelResult(status="no_match", matches=[]))
+    at.radio[0].set_value("AI matching").run()
+    at.text_area[0].input("purple telescope")
+    at.button[0].click().run()
+    assert at.session_state["result"].status == "no_match"
+    assert at.session_state["keyword_comparison"] == ["LF-009", "LF-015"]
+    assert "Keyword comparison" in [s.value for s in at.subheader]
+    at.selectbox[0].select("Notebook")
+    at.button[0].click().run()
+    assert at.session_state["keyword_comparison"] == ["LF-009"]
+    at.text_area[0].input("Who owns the purple notebook?")
+    at.button[0].click().run()
+    assert at.session_state["keyword_comparison"] is None
+    assert "Keyword comparison" not in [s.value for s in at.subheader]
+    assert not at.exception
+
 def test_staff_add_student_search_and_collect(monkeypatch, tmp_path):
     from lostfound.database import connect_database, initialize, list_items
     from lostfound.auth import provision_account
